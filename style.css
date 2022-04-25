@@ -1,0 +1,72 @@
+*{
+    border-radius: 15px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+span{
+    position: relative;
+}
+b{
+    background-color: orange;
+    padding: 5px;
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+    color: white;
+}
+nav {
+    background-color: rgb(32, 31, 31);
+    opacity: 0.8;
+   padding: 30px 0px;
+   border-radius: 10px 100px 10px 100px;
+   margin: 20px 0px;
+   position: sticky;
+   top: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 30px;
+    font-size: larger;
+}
+a:hover{
+    background-color: rgba(228, 228, 228, 0.363);
+    padding: 20px ;
+    border-radius: 10px 100px 10px 100px;
+   transition: all 0.5s;
+
+}
+img {
+    width: 30%;
+    margin: 8px 0px 15px;
+}
+ p{
+    margin: 25px 0px;
+
+}
+main p:hover{
+    background-color: orangered;
+    cursor:text;
+    font-size: larger;
+    padding-bottom: 20px;
+    margin: 10px 0px;
+    transition: all 0.2s;
+
+
+}
+h1:hover{
+    background-color: orangered;
+    cursor:text;
+    padding-bottom: 30px;
+    transition: all 0.2s;
+
+}
+
+footer{
+    background-color: rgb(32, 31, 31);
+    color: white;
+    padding: 15px 0px;
+    font-size: larger;
+  
+}
