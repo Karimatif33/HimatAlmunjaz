@@ -60,6 +60,18 @@ html {
     position: relative;
   }
   }
+  @media (max-width: 1388px) {
+    .header {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: space-between;
+      padding:0px 100px 0px 7px;
+      background-color: var(--body-color);
+      box-shadow: 0 2px 100px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    }
 .logo img {
   height: 73px;
   width: 150px;
@@ -363,9 +375,10 @@ button:hover {
   color: var(--body-color);
 }
 /* section 4 */
-.our-project {
+.our-project .nums {
   background-image: url(img/background.jpg);
-  height: 250px;
+  height: 430px;
+    margin: -8px 0px 0px 0px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -376,6 +389,7 @@ button:hover {
   text-align: center;
   position: relative;
   justify-content: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 768px) {
   .our-project {
@@ -392,21 +406,23 @@ flex-wrap: wrap;    align-items: center;
     justify-content: center;
   }
 }
-.our-project div {
+.our-project .nums div {
   padding: 1px 30px;
 }
-.our-project i {
+.our-project .nums i img{
   color: var(--secondary-color);
   background-color: var(--body-color);
   padding: 30px;
   border-radius: 360%;
-  font-size: 40px;
+  width: 125px;
+  height: 119px;
 }
-.our-project h2 {
+.our-project .nums div {
   margin-top: 3px;
   margin-bottom: 0px;
+  font-size: 25px;
 }
-.our-project h6 {
+.our-project .nums h6 {
   margin-top: 4px;
 }
 /* section 5 */
@@ -423,6 +439,15 @@ flex-wrap: wrap;    align-items: center;
     text-align: center;
     margin: 25px auto 0px auto;
   }
+}
+
+.our-serves-2 {
+  margin: 40px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  cursor: default;
 }
 
 .card-our-work {
@@ -480,6 +505,9 @@ flex-wrap: wrap;    align-items: center;
   position: relative;
   bottom: 30px;
 }
+.one , .two , .three ,.four , .five , .six , .seven{
+  display: none;
+}
 /* section 6 */
 
 .buttons {
@@ -534,15 +562,13 @@ flex-wrap: wrap;    align-items: center;
 }
 .secton-6-img img:hover {
   box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
-  width: 423px;
-  height: 102%;
+ 
   transition: 0.1s;
 }
 @media (max-width: 768px) {
   .secton-6-img img:hover {
     box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.2);
-    width: 370px;
-    height: 102%;
+   
     transition: 0.1s;
   }
 }
@@ -606,7 +632,7 @@ margin: 0px auto 10px auto;
 .quta {
   box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.19);
   width: 330px;
-  height: 550px;
+  height: 283px;
   margin: 80px auto 85px auto;
   text-align: center;
   display: flex;
@@ -616,45 +642,36 @@ margin: 0px auto 10px auto;
   transition: 0.2s all;
 }
 .quta h2 {
-  position: relative;
-  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.19);
-  background-color: var(--text-color2);
-  border: 3px solid var(--body-color);
-  color: var(--body-color);
-  border-radius: 50%;
-  width: 130px;
-  height: 300px;
-  right: 98px;
-  bottom: 50px;
-  display: flex;
-  align-items: center;
-  align-content: center;
+color: var(--main-color);
 }
+.quta:hover h2 {
+  color: var(--body-color);
+  }
 @media (max-width: 768px) {
   .quta h2 {
-    position: relative;
-    box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.19);
-    background-color: var(--text-color2);
-    border: 3px solid var(--body-color);
-    color: var(--body-color);
-    border-radius: 50%;
-    width: 156px;
-    height: 300px;
-    right: 55px;
-    bottom: 106px;
-    display: flex;
-    align-items: center;
-    align-content: center;
+
   }
 }
 .quta h1 {
-  margin: -55px auto 25px auto;
+  margin: 10px 0px 0px 0px;
+  color: #000000;
+}
+.quta:hover h1 {
+  color: var(--body-color);
+  }
+.quta h3 {
+  margin: 20px 0px 0px 0px;
+  text-decoration: line-through;
+  color: #FF0000;
+}
+
+.quta h5 {
+  margin: -13px 0px 0px 0px;
+  font-weight: 500;
 }
 @media (max-width: 768px) {
   .quta h1 {
-    margin: -78px auto -1px auto;
-    position: relative;
-    bottom: 31px;
+
   }
 }
 .quta ul li {
@@ -678,22 +695,15 @@ margin: 0px auto 10px auto;
 }
 
 .quta button{
-  border-radius: 30px;
+  border-radius: 10px;
   text-align: center;
-  width: 140px;
+  width: 150px;
   background-color: var(--text-color2);
   border: 2px solid transparent;
-}
-.quta:hover h2{
-  box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.19);
+  color: var(--body-color);
   background-color: var(--main-color);
-  border: 3px solid var(--body-color);
-  width: 156px;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  align-content: center;
 }
+
 .quta:hover{
   background-color: var(--secondary-color);
 
@@ -701,7 +711,8 @@ margin: 0px auto 10px auto;
 }
 .quta:hover button{
   box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.19);
-  background-color: var(--main-color);
+  color: var(--main-color);
+  background-color:var(--body-color);
 }
 .quta:hover i{
   color: var(--main-color);
