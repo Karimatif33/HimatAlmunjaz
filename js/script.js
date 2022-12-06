@@ -20,6 +20,6 @@ function StartCount(eo) {
     if (eo.textContent == goal) {
       clearInterval(count);
     }
-  }, 4000 / goal);
+  }, 3000 / goal);
 }
 
