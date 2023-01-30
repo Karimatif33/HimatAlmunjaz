@@ -1,83 +1,20 @@
-.our-serves {
-  margin: 40px auto 20px auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  cursor: default;
+/* Start Variables*/
+:root {
+  --main-color: #3aa3db;
+  --secondary-color: #f1a31d;
+  --section-padding: 60px;
+  --body-color: #ffffff;
+  --text-color: #000000;
+  --text-color2: #888888;
+  --search-text: #010718;
 }
-.section-3 {
-  width: 70%;
-}
-@media (max-width: 768px) {
-  .section-3 {
-    width: 98%;
-  }
-}
-.section-3 p {
-  max-width: 90%;
-  font-size: 21px;
-  font-weight: 300;
-  text-align: center;
-  margin: 25px auto 0px auto;
-}
-.secton-3-card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.secton-3-card div {
-  padding: 50px 0px 0px 0px;
-  text-align: center;
-  width: 420px;
-  height: 290px;
-  border-radius: 12px;
-  margin: 55px 12px 10px 0px;
-  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
-}
-@media (max-width: 768px) {
-  .secton-3-card div {
-    padding: 50px 0px 0px 0px;
-    text-align: center;
-    width: 420px;
-    height: 290px;
-    border-radius: 12px;
-    margin: 55px 0px 10px 0px;
-    box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
-  }
-}
-.secton-3-card div i {
-  color: var(--main-color);
-  font-size: 40px;
-}
-
-.secton-3-card div p {
-  font-weight: 300;
-  font-size: 20px;
-}
-.section-3 button {
-  width: 150px;
-  height: 45px;
-  margin: 25px auto 25px auto;
-  display: flex;
-}
-.secton-3-card div:hover {
-  background-color: var(--secondary-color);
-  color: var(--body-color);
-
-  box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.1);
-}
-.secton-3-card div:hover i {
-  color: var(--body-color);
-}
+/* End Variables*/
 .circle h4{
   color: var(--main-color);
   font-size: 40px;
+
 }
-  /* Nav Start */
+/* Nav Start */
   /* Style The Dropdown Button */
 
   .dropbtn {
@@ -168,3 +105,59 @@
       }
     }
       /* Nav end */
+       /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: var(--main-color);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: var(--text-color2);
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 55px auto;
+  box-shadow: 0 2px 100px rgba(0, 0, 0, 0.2);
+
+} 
+@media (min-width: 1200px) {
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 148px auto;
+    box-shadow: 0 2px 100px rgba(0, 0, 0, 0.2);
+  
+  } 
+}
+@media (max-width: 768px) {
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 64px auto;
+    box-shadow: 0 2px 100px rgba(0, 0, 0, 0.2);
+  
+  } 
+  }

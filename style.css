@@ -136,19 +136,18 @@ html {
   }
   }
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1;
+.dropdown-content a:hove {background-color: #f1f1f1;
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+
+.active1{
   display: block;
-  margin: 72px -78px -2px 1px;
-
+  margin: 68px -79px 0px 0px;;
 }
-
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: var(--text-color2);
+  background-color: var(--main-color);
 }
 .logo img {
   height: 73px;
@@ -160,8 +159,7 @@ html {
     height: 53px;
     width: 150px;
     margin-top: 13px;
-    margin-right: 120px;
-  }
+    margin-right: 100px;  }
   }
     /* Nav end */
 
@@ -983,8 +981,13 @@ footer .con-us {
   font-weight: bolder;
   transition: 0.2s ease;
   padding: 0px 0px;
-
 }
+
+.fast-link .nav-footer li a:hover {
+  color: var(--main-color);
+}
+
+
 .contect-us{
   width: 30%;
 }

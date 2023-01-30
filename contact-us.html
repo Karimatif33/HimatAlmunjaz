@@ -14,9 +14,10 @@
   <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="style-our-work.css" />
+  <link rel="stylesheet" href="contact-us.css" />
 
   <script defer src="js/script.js"></script>
-  <title>اعمالنا</title>
+  <title>إتصل بنا</title>
 </head>
 <body>
   <section dir="rtl" lang="ar" class="header">
@@ -24,16 +25,17 @@
       <div class="dropdown">
         <button class="dropbtn"><i id="ddn" class="fa fa-bars"></i></button>
         <div class="dropdown-content">
-              <a class="activ" href="">الرئيسية</a>
-              <a href="contact-us.html">من نحن</a>
+              <a class="activ" href="index.html">الرئيسية</a>
+              <a href="">من نحن</a>
               <a href="quta.html">الباقات</a>
-              <a href="">إتصل بنا</a>
+              <a href="contact-us.html">إتصل بنا</a>
               <a href="our-serves.html">خداماتنا</a>
               <a href="our-work.html">أعمالنا</a>
         </div>
         <div class="logo"><a href="index.html"><img src="img/logo.svg" alt=""  /></a></div>
     </div>
       </div>
+      
     <nav>
       <div>
         <ul class="nav-bar">
@@ -47,53 +49,47 @@
             <a  href="quta.html">الباقات</a>
           </li>
           <li>
-            <a href="contact-us.html">إتصل بنا</a>
+            <a class="active" href="contact-us.html">إتصل بنا</a>
           </li>
           <li>
             <a href="our-serves.html">خداماتنا</a>
           </li>
           <li>
-            <a class="active" href="our-work.html">أعمالنا</a>
+            <a  href="our-work.html">أعمالنا</a>
           </li>
         </ul>
       </div>
     </nav>
   </section>
  
-  <section class="our-work">
-    <div class="circle">
-      <h4>أعمالنا</h4>
-    </div>
-    <div class="section-2">
-      <p>
-        هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
-        النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من
-        النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-      </p>
-      <div class="buttons">
-        <button class="btn1 btn">الجميع</button>
-        <button class="btn2 btn-gray btn">تصاميم</button>
-        <button class="btn3 btn-gray btn">المونتاج</button>
-        <button class="btn4 btn-gray btn">خدمات التعليم</button>
+  <div dir="ltr" class="container">
+    <form action="index.html">
+  
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Egypt</option>
+        <option value="canada">Saudi Arabia</option>
+        <option value="usa">United Arab Emirates</option>
+      </select>
+  
+      <label for="subject">your massage</label>
+      <textarea id="subject" name="subject" placeholder="Write your massage.." style="height:200px"></textarea>
+  
+      <input type="submit" value="Submit">
+  
+    </form>
+  </div> 
 
-      </div>
-      <div class="secton-6-img">
-        <img src="img/4.jpg" alt="" />
-        <img src="img/5.jpg" alt="" />
-        <img src="img/6.jpg" alt="" />
-        <img src="img/7.jpg" alt="" />
-        <img src="img/8.jpg" alt="" />
-        <img src="img/9.jpg" alt="" />
-        <img src="img/4.jpg" alt="" />
-        <img src="img/5.jpg" alt="" />
-        <img src="img/6.jpg" alt="" />
-        <img src="img/7.jpg" alt="" />
-        <img src="img/8.jpg" alt="" />
-        <img src="img/9.jpg" alt="" />
-      </div>
-      <button>عرض المزيد</button>
-    </div>
-  </section>
+
+
+
+
   <section class="footer">
     <footer>
       <div class="footer-logo">
